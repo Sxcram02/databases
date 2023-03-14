@@ -1,0 +1,21 @@
+INSERT INTO proveedor VALUES(1, 'BenQ');
+INSERT INTO proveedor VALUES(2, 'Logitech');
+INSERT INTO proveedor VALUES(3, 'Lacie');
+INSERT INTO proveedor VALUES(4, 'Intel');
+INSERT INTO proveedor VALUES(5, 'Kyocera');
+INSERT INTO proveedor VALUES(6, 'Panda');
+INSERT INTO proveedor VALUES(7, 'Microsoft');
+INSERT INTO proveedor VALUES(8, 'Linksys');
+INSERT INTO proveedor VALUES(9, 'AMD');
+
+INSERT INTO material VALUES(1, 'Disco Duro 2TB portable', 120.99, 3);
+INSERT INTO material VALUES(2, 'Procesador i5', 99.99, 4);
+INSERT INTO material VALUES(3, 'Antivirus 3.0', 60, 6);
+INSERT INTO material VALUES(4, 'Firewall Online 2.0', 200, 6);
+INSERT INTO material VALUES(5, 'Monitor 32', 300.99, 1);
+INSERT INTO material VALUES(6, 'Impresora Laser', 181, 5);
+INSERT INTO material VALUES(7, 'Ratón Óptico', 30, 2);
+INSERT INTO material VALUES(8, 'Monitor 24', 199, 1);
+INSERT INTO material VALUES(9, 'Teclado', 15, 2);
+INSERT INTO material VALUES(10, 'Disco Duro SSD 500GB', 60, 3);
+INSERT INTO material VALUES(11, 'Licencia Windows 10', 90, 7);

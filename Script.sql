@@ -1,0 +1,52 @@
+USE fuertesNeomediavales;
+
+/*
+CONSULTA DE LA TABLA VIGILANTE
+SEGUN EL NUMERO DE FILAS 
+*/
+
+SELECT * 
+FROM vigilante LIMIT 6 DESC; 
+SELECT * 
+FROM vigilante LIMIT 4,3;
+SELECT *
+FROM vigilante LIMIT 10,10;
+
+/*
+CONSULTAMOS EL NOMBRE DE LOS FPORTINES DE FORMA 
+ASCENDENTE Y DESCENDENTE
+*/
+
+SELECT nombreVig 
+FROM fortin ORDER BY nombreVig ASC;
+SELECT nombreVig
+FROM fortin ORDER BY nombreVig DESC;
+
+/*
+ESTA CONSULTA MUESTRA EL ALIAS DEL NOMBRE 
+ORDENA SEGUN SU EDAD
+*/
+
+
+SELECT CONCAT_WS(" ", nombreVig, ap1, ap2) AS nombreCompleto
+FROM vigilante ORDER BY fechaNacimiento DESC;
+SELECT CONCAT_WS(" ", nombreVig, ap1, ap2) AS nombreCompleto
+FROM vigilante ORDER BY fechaNacimiento ASC;
+
+/*
+EN ESTA CONSULTA SE MUESTRAN LAS CONSULTAS
+DEL DNI SEGUN SU SUELDO.
+*/
+
+SELECT SUBSTRING(DNI, 1, 8), nombreVig 
+FROM vigilante ORDER BY sueldo DESC;
+SELECT SUBSTRING(DNI, 1, 8), nombreVig
+FROM vigilante ORDER BY sueldo ASC;
+
+/*
+SE MUESTRA UNA LISTA CON LOS DOS PRIMEROS
+FORTINES QUE HAY EN LA TABLA
+*/
+
+SELECT * 
+FROM fortin LIMIT 2;
